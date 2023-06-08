@@ -173,10 +173,9 @@ footer {
     text-align:center;
     padding: 15px;
     z-index: 9999;
-    width: 100%;
+    width: 98%;
     position:relative;
     bottom:0;
-    width: 100%;
     }
 
 .tutorial {
@@ -195,6 +194,8 @@ footer {
     margin: 5px;
     display: inline-block;
     font-size: 16px;}
+
+button {text-decoration: none;}
 
 .stepbystep:hover {background-color: black;
     color: white;
@@ -339,7 +340,7 @@ output {
 /* Lading Page - Menu Inicial */
 
 .landingline {margin-bottom: -7px;}
-.landingrect1 {float:left; width: 75%; margin-right: 3px; padding-top: 20px;}
+.landingrect1 {float:left; width: 75%; padding-top: 20px;}
 .landingrect2 {display: inline-flex; width: 46%; margin-right: 3px; vertical-align: top;}
 .square {display:inline-flex; width: 25%; margin: -2px;}
 
@@ -412,7 +413,15 @@ output {
     .newgame {font-size: 12px; margin: 0; padding: 4px 6px 4px 6px; margin-top: 16px;}
     .carrinho {height: 20px; padding: 6px; margin-top: 14px;}
     }
-    
+
+/* Mobile Small*/
+
+@media only screen and (max-width: 500px)
+    {       
+    .newgame {font-size: 11px; margin: 0; padding: 3px 5px 3px 5px; margin-top: 16px;}
+    .carrinho {height: 16px; padding: 6px; margin-top: 14px;}
+    }
+
 /* new animation */
 
 .animate {
