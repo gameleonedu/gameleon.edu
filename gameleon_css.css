@@ -340,7 +340,7 @@ output {
 /* Lading Page - Menu Inicial */
 
 .landingline {margin-bottom: -7px;}
-.landingrect1 {float:left; width: 75%; padding-top: 20px;}
+.landingrect1 {float:left; width: 74%; padding-top: 20px; padding-right: 5px;}
 .landingrect2 {display: inline-flex; width: 46%; margin-right: 3px; vertical-align: top;}
 .square {display:inline-flex; width: 25%; margin: -2px;}
 
