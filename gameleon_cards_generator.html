@@ -1,4 +1,664 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+<title>GAMELEON</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<meta name="author" content="gameleon">
+<meta name="description" content="gameleon">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+
+<link rel="stylesheet" type="text/css" href="print.css" media="print">
+<link rel="stylesheet" type="text/css" href="gameleon_css.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+</head>
+
+<body>
+
+    <div class="mainmenu noprint">
+        <!-- Navbar (sit on top) -->
+            <header class="bar noprint">
+                <div style="text-align: center;">
+        
+            <!-- Right-sided navbar links -->
+                    <div class="leftalign">
+                        <div id="navbar">
+                            <a href="#about" class="baritem">Sobre Nós</a>
+                            <a href="gameleon_products.html" class="baritem">Produtos</a>
+                            <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
+                            <a href="#contact" class="baritem">Contactos</a>
+                        </div>
+        
+                        <div id="menu_icon" class="baritem"onclick="openclose(this)">
+                            <div id="bar1"> </div>
+                            <div id="bar2"> </div>
+                            <div id="bar3"> </div>
+                        </div>
+                    </div>
+        
+                    <div class="leftalign homealign">
+                        <a href="index.html" class="baritem">GAMELEON.EDU</a>
+                    </div>
+                    
+                    <div class="rightalign">
+                        <a href="gameleon_cards_generator.html" class="newgame">NOVO JOGO</a>
+                        <a href="gameleon_under_construction.html" class="carrinho"><img src="Pictures/carrinho.png"></a>
+                    </div>
+        
+                </div>
+            </header>
+        
+            <div id="drawer">
+                <nav>
+                    <a href="#about" class="draweritem">Projeto</a>
+                    <a href="gameleon_products.html" class="draweritem">Produtos</a>
+                    <a href="gameleon_under_construction.html" class="draweritem">Comunidade</a>
+                    <a href="#contact" class="draweritem">Contactos</a>
+                </nav>
+            </div>
+        
+    </div>
+
+
+<div id="container" class="containercards">
+
+<!-- Página Geração Cartas -->
+    <div id="cardgenerator">
+    
+        <div class="noprint commonpadding">
+    
+            <h3>GERADOR DE CARTAS PASSO A PASSO</h3>
+
+<!--Upload das perguntas-->
+
+            <div class="tutorial">
+
+                <div class="stepbystep">
+                    <div class="stepbystepnumber">1</div>
+                    <p>Título do Jogo</p>
+                    <form action="/action_page.php" id="temajogo" oninput="titulo_1.value=tema.value; titulo_2.value=tema.value; titulo_3.value=tema.value; titulo_4.value=tema.value;
+                        titulo_5.value=tema.value; titulo_6.value=tema.value; titulo_7.value=tema.value; titulo_8.value=tema.value;
+                        titulo_9.value=tema.value; titulo_10.value=tema.value; titulo_11.value=tema.value; titulo_12.value=tema.value;
+                        titulo_13.value=tema.value; titulo_14.value=tema.value; titulo_15.value=tema.value; titulo_16.value=tema.value;
+                        titulo_17.value=tema.value; titulo_18.value=tema.value; titulo_19.value=tema.value; titulo_20.value=tema.value;
+                        titulo_21.value=tema.value; titulo_22.value=tema.value; titulo_23.value=tema.value; titulo_24.value=tema.value;
+                        titulo_25.value=tema.value; titulo_26.value=tema.value; titulo_27.value=tema.value; titulo_28.value=tema.value;
+                        titulo_29.value=tema.value; titulo_30.value=tema.value; titulo_31.value=tema.value; titulo_32.value=tema.value;
+                        titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value;">
+                        <p><input type="text" id="tema" name="tema" value="Escrever aqui. Máximo 19 caracteres!"></p>
+                    </form>
+                </div>
+
+                <div class="stepbystep">
+                    <div class="stepbystepnumber">2</div>
+                    <p>Download</p>
+                    <button>
+                        <a href="Template.csv" download>
+                            <l style="color: black; font-size: 12px; border-radius: 0;"> Template CSV</l>
+                        </a>
+                    </button>    
+                </div>
+
+                <div class="stepbystep">
+                    <div class="stepbystepnumber">3</div>
+                    <p>Selecionar Ficheiro CSV</p>
+                    <input type="file" accept=".csv" id="picker" style="margin-left: 20px;">
+                    <table id="table" style="display: none; font-size: 12px;"></table>
+                </div>
+                    
+                <div class="stepbystep">
+                    <div class="stepbystepnumber">4</div>
+                    <p>Upload Perguntas</p>
+                    <button onclick="myFunction()" style="font-size: 12px;">Gerar cartas</button>
+                </div>
+
+                <div class="stepbystep">
+                    <div class="stepbystepnumber">5</div>
+                    <p>Imprimir cartas</p>
+                    <button onclick="printDiv('perguntas')" style="font-size: 12px;">Clicar aqui</button>
+                </div>
+            </div>
+
+            <div class="cardsbutton">
+                <div class="buttoninfo">
+                    <button class="button_red" onclick="currentDiv(1)"></button>
+                    <span class="textbuttoninfo textbuttoninfored">Verdadeiro ou Falso</span>
+                </div>
+                <div class="buttoninfo">
+                    <button class="button_cyan" onclick="currentDiv(2)"></button>
+                    <span class="textbuttoninfo textbuttoninfocyan">Escolha Múltipla</span>
+                </div>
+                <div class="buttoninfo">
+                    <button class="button_green" onclick="currentDiv(3)"></button>
+                    <span class="textbuttoninfo textbuttoninfogreen">Adivinha</span>
+                </div>
+            </div>
+
+            <br/>
+
+
+        </div>
+
+        <!--Módulo Perguntas Novo-->
+
+        <div id="questions" class="print">
+
+            <div id="cards_page1" class="slideshow">
+
+            <div id="card_1" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_1" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_1" class="question"></textarea>
+                <textarea id="resposta_1" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_2" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_2" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_2" class="question"></textarea>
+                <textarea id="resposta_2" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_3" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_3" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_3" class="question"></textarea>
+                <textarea id="resposta_3" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_4" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_4" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_4" class="question"></textarea>
+                <textarea id="resposta_4" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_5" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_5" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_5" class="question"></textarea>
+                <textarea id="resposta_5" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_6" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_6" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_6" class="question"></textarea>
+                <textarea id="resposta_6" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_7" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_7" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_7" class="question"></textarea>
+                <textarea id="resposta_7" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_8" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_8" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_8" class="question"></textarea>
+                <textarea id="resposta_8" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_9" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_9" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_9" class="question"></textarea>
+                <textarea id="resposta_9" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_10" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_10" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_10" class="question"></textarea>
+                <textarea id="resposta_10" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_11" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_11" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_11" class="question"></textarea>
+                <textarea id="resposta_11" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_12" class="cards_red">
+                <div class="titleblock">
+                    <textarea id="titulo_12" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/verdadeirofalso.png">
+                </div>
+                <textarea id="pergunta_12" class="question"></textarea>
+                <textarea id="resposta_12" class="answer answer-red"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            </div>
+
+            <div id="cards_page2" class="slideshow">
+
+            <div id="card_13" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_13" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_13" class="question_MC"></textarea>
+
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div>
+                    <textarea id="EM_13A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div>
+                    <textarea id="EM_13B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div>
+                    <textarea id="EM_13C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_13" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_14" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_14" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_14" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_14A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_14B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_14C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_14" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_15" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_15" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_15" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_15A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_15B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_15C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_15" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_16" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_16" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_16" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_16A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_16B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_16C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_16" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_17" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_17" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_17" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_17A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_17B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_17C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_17" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_18" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_18" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_18" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_18A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_18B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_18C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_18" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_19" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_19" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_19" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_19A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_19B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_19C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_19" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_20" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_20" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_20" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_20A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_20B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_20C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_20" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_21" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_21" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_21" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_21A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_21B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_21C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_21" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_22" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_22" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_22" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_22A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_22B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_22C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_22" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_23" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_23" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_23" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_23A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_23B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_23C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_23" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_24" class="cards_cyan">
+                <div class="titleblock">
+                    <textarea id="titulo_24" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/escolhamultipla.png">
+                </div>
+                <textarea id="pergunta_24" class="question_MC"></textarea>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">A.</p></div><textarea id="EM_24A" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">B.</p></div><textarea id="EM_24B" class="option_MC_answer"></textarea>
+                </div>
+                <div class="option_MC">
+                    <div class="option_MC_type"><p class="aligntext">C.</p></div><textarea id="EM_24C" class="option_MC_answer"></textarea>
+                </div>
+                <textarea id="resposta_24" class="answer answer-cyan"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            </div>
+
+            <div id="cards_page3" class="slideshow">
+
+            <div id="card_25" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_25" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_25" class="question"></textarea>
+                <textarea id="resposta_25" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_26" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_26" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_26" class="question"></textarea>
+                <textarea id="resposta_26" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_27" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_27" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_27" class="question"></textarea>
+                <textarea id="resposta_27" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_28" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_28" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_28" class="question"></textarea>
+                <textarea id="resposta_28" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_29" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_29" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_29" class="question"></textarea>
+                <textarea id="resposta_29" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_30" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_30" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_30" class="question"></textarea>
+                <textarea id="resposta_30" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_31" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_31" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_31" class="question"></textarea>
+                <textarea id="resposta_31" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_32" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_32" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_32" class="question"></textarea>
+                <textarea id="resposta_32" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_33" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_33" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_33" class="question"></textarea>
+                <textarea id="resposta_33" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_34" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_34" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_34" class="question"></textarea>
+                <textarea id="resposta_34" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_35" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_35" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_35" class="question"></textarea>
+                <textarea id="resposta_35" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            <div id="card_36" class="cards_green">
+                <div class="titleblock">
+                    <textarea id="titulo_36" class="questiontitle"></textarea>
+                    <img class="titlelogo" src="Pictures/adivinha.png">
+                </div>
+                <textarea id="pergunta_36" class="question"></textarea>
+                <textarea id="resposta_36" class="answer answer-green"></textarea>
+                <img class="logo" src="Pictures/gameleon_edu.svg">
+            </div>
+
+            </div>
+
+            <div class="creativecommons">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
+                    <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/88x31.png" />
+                </a>
+                <br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>            
+            </div>
+
+
+        </div>
+    
+        <!--Acaba aqui DIV Cartas-->
+
+    </div>
+
+</div>
+
+  <!-- Footer -->
+<footer class="noprint">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
+    <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/80x15.png" />
+    </a>
+    <br />Este trabalho está licenciado com uma Licença <a rel="license" style="color: black;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>
+</footer>
+  
+  
+
+<script src="gameleon_js.js"></script>
+  
+</body>
+</html>html>
 <html>
 <head>
 <title>GAMELEON</title>
