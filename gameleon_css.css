@@ -345,7 +345,7 @@ output {
 .square {display:inline-flex; width: 25%; margin: -2px;}
 
 .animatedtext {
-    font-size: 3.8vw;
+    font-size: 3.7vw;
     position: relative;
     line-height: 1.3;}
 
@@ -411,16 +411,16 @@ output {
 @media only screen and (max-width: 870px)
     {       
     .newgame {font-size: 12px; margin: 0; padding: 4px 6px 4px 6px; margin-top: 16px;}
-    .carrinho {height: 20px; padding: 6px; margin-top: 14px;}
+    .carrinho {height: 18px; padding: 6px; margin-top: 14px;}
     }
 
 /* Mobile Small*/
 
 @media only screen and (max-width: 400px)
     {       
-    .newgame {font-size: 11px; margin: 0; padding: 3px 5px 3px 5px; margin-top: 16px;}
+    .newgame {font-size: 10px; margin: 0; padding: 3px 5px 3px 5px; margin-top: 16px;}
     .carrinho {height: 16px; padding: 6px; margin-top: 14px;}
-    .rightalign {float: right; vertical-align: middle; width: 30%; margin-right: 2%;}
+    .rightalign {float: right; vertical-align: middle; width: 25%; margin-right: 2%;}
     }
 
 /* new animation */
