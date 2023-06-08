@@ -158,8 +158,6 @@ body, html {
     }
 
 .containercards {background-color:antiquewhite;
-    display: block;
-    overflow-x: hidden;
     min-height: 100%;
     width: 100%;
     }
@@ -181,7 +179,7 @@ footer {
     width: 100%;
     }
 
-.tutorial {display: block;
+.tutorial {
     width: 100%;
     text-align: center;
     margin-top: 90px;
@@ -215,18 +213,18 @@ input {
     font-size: 12px;
 }
 
-.cardsbutton {display: block;
+.cardsbutton {
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
 
-.button_red {background: url(Pictures/verdadeirofalso.png);background-size: 100%; width: 100px; height: 100px;
-    border-color: transparent;}
+.button_red {background: url(Pictures/verdadeirofalso.png); background-size: 100%; width: 100px; height: 100px;
+    border-color: transparent; z-index: 1;}
 .button_cyan {background: url(Pictures/escolhamultipla.png); background-size: 100%; width: 100px; height: 100px;
-    border-color: transparent}
+    border-color: transparent; z-index: 1;}
 .button_green {background: url(Pictures/adivinha.png); background-size: 100%; width: 100px; height: 100px;
-    border-color: transparent;}
+    border-color: transparent; z-index: 1;}
 
 .button_red:hover {background-color: black;
     box-shadow: 0px 0px 20px 0px grey;}
@@ -274,11 +272,11 @@ input {
 #cards_page1, #cards_page2, #cards_page3 {text-align: center; width: 100%; display: block;}
 
 .cards_red {width:75mm; height: 75mm; border-style: solid; border-width: 2mm; border-color: #e62f1e;
-    padding: 1mm; display:inline-block; background-color: transparent; margin: 10px; background-color: white;}
+    padding: 1mm; display:inline-block; background-color: transparent; margin: 8px; background-color: white;}
 .cards_cyan {width:75mm; height: 75mm; border-style: solid; border-width: 2mm; border-color: #009fe3;
-    padding: 1mm; display:inline-block; background-color: transparent; margin: 10px; background-color: white;}
+    padding: 1mm; display:inline-block; background-color: transparent; margin: 8px; background-color: white;}
 .cards_green {width:75mm; height: 75mm; border-style: solid; border-width: 2mm; border-color:#4ead33;
-    padding: 1mm; display:inline-block; background-color: transparent; margin: 10px; background-color: white;}
+    padding: 1mm; display:inline-block; background-color: transparent; margin: 8px; background-color: white;}
 
 .titleblock {position: relative; z-index: 0;}
 
@@ -389,7 +387,7 @@ output {
     
  /* Tablet */
     
-@media only screen and (max-width: 1300px)
+@media only screen and (max-width: 1050px)
     {
     #menu_icon {
         display: block;
