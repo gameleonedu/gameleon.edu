@@ -173,7 +173,7 @@ footer {
     text-align:center;
     padding: 15px;
     z-index: 9999;
-    width: 98%;
+    width: 100%;
     position:relative;
     bottom:0;
     }
@@ -340,7 +340,7 @@ output {
 /* Lading Page - Menu Inicial */
 
 .landingline {margin-bottom: -7px;}
-.landingrect1 {float:left; width: 74%; padding-top: 20px; padding-right: 5px;}
+.landingrect1 {float:left; width: 73%; padding-top: 20px; padding-right: 5px;}
 .landingrect2 {display: inline-flex; width: 46%; margin-right: 3px; vertical-align: top;}
 .square {display:inline-flex; width: 25%; margin: -2px;}
 
@@ -419,7 +419,7 @@ output {
 @media only screen and (max-width: 400px)
     {       
     .newgame {font-size: 10px; margin: 0; padding: 3px 5px 3px 5px; margin-top: 16px;}
-    .carrinho {height: 16px; padding: 6px; margin-top: 14px;}
+    .carrinho {height: 14px; padding: 4px; margin-top: 14px;}
     .rightalign {float: right; vertical-align: middle; width: 25%; margin-right: 2%;}
     }
 
