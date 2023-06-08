@@ -22,11 +22,11 @@ header {
 }
 
 body, html {
-  height: 100%;
   max-width: 100%;
   line-height: 1.8;
   margin: 0;
   background-color: antiquewhite;
+  overflow-x: hidden;
 }
 
 .minisquare_red {
@@ -298,7 +298,7 @@ input {
 .option_MC_type {float: left; width: 5mm; font-size: 11pt; height: 6mm;}
 .aligntext {position: relative; float: left; left: 30%; transform: translate(-50%, -50%);}
 .option_MC_answer {text-align: left ; width: 65mm; height: 6mm; border-color: transparent; line-height: 1.6;
-font-size: 11pt;}
+font-size: 11pt; overflow-y: hidden;}
 
 .answer {border-color: transparent; background-color: transparent; position: relative; height: 5mm; padding-left:
     2mm; padding-right: 2mm; font-size: 11pt;}
