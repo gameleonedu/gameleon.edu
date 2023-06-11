@@ -1,11 +1,11 @@
-header,body,h1,h2,h3,h4,h5,h6, .questiontitle, .question, .answer, .question_MC, .option_MC_type, .option_MC_answer {
+header,body,h1,h2,h3,h4,h5,h6,button .questiontitle, .question, .answer, .question_MC, .option_MC_type, .option_MC_answer {
     font-family: 'Josefin Sans', sans-serif;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .mainmenu {
@@ -25,8 +25,51 @@ body, html {
   max-width: 100%;
   line-height: 1.8;
   margin: 0;
-  background-color: antiquewhite;
+  background: url(Pictures/kraft2.jpg);
   overflow-x: hidden;
+}
+
+
+/* tabela */
+
+.numero {width: 80px;}
+
+.tablestyle {
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: left;
+  }
+  
+  .tablestyle td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    word-wrap: break-word;
+  }
+  
+  .tablestyle tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .tablestyle tr:hover {background-color: #ddd;}
+  
+  .tablestyle th {
+    padding: 8px 12px 8px 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+  }
+
+.tablestyle-wrapper {
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border: solid 5px white;
+}
+
+.tablestyle-wrapper thead th{
+    position: sticky;
+    top: 0;
 }
 
 .minisquare_red {
@@ -149,7 +192,7 @@ body, html {
 
 .draweritem:hover {color: black; background-color: lightgray;}
 
-.mycontainer {background-color:antiquewhite;
+.mycontainer {background-color:transparent;
     display: block;
     overflow-x: hidden;
     min-height: 100%;
@@ -158,7 +201,7 @@ body, html {
     margin-right: 2%;
     }
 
-.containercards {background-color:antiquewhite;
+.containercards {background-color:transparent;
     min-height: 100%;
     width: 100%;
     }
@@ -169,34 +212,56 @@ section {
 footer {
     clear: both;
     display: block;
-    background-color: antiquewhite;
+    background-color: transparent;
     color:black;
     padding: 16px;
     z-index: 9999;
     width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
-    position:relative;
-    bottom:0;
+    margin-left: 0%;
+    margin-right: 0%;
     font-size: 12px;
     }
+
+
+#geradorCartas_2 {
+    display: none;
+}
+
+#geradorCartas_3 {
+    display: none;
+}
+
+
 
 .tutorial {
     width: 100%;
     text-align: center;
-    margin-top: 90px;
 }
     
 .stepbystep {background-color: white;
     color: black;
-    height: 110px;
-    width: 240px;
+    height: 70px;
+    width: 200px;
     text-align: center;
     text-decoration: none;
     padding: 5px;
     margin: 5px;
     display: inline-block;
-    font-size: 16px;}
+    font-size: 16px;
+    line-height: 0.5;}
+
+.actionbutton {background-color: black;
+    color: white;
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 0.5;
+    border: none;}
 
 button {text-decoration: none;}
 
@@ -204,12 +269,14 @@ button {text-decoration: none;}
     color: white;
     box-shadow: 0px 0px 20px 0px grey;}
 
-.stepbystepnumber{
-    position: absolute;
-    font-size: 50px;
-    font-weight: bolder;
-    margin-top: -20px;
-    margin-left: 2px;
+.actionbutton:hover {
+    color: black;
+    background-color: lightgray;}
+
+.actionbutton:active {
+    color: black;
+    background-color: white;
+    transform: translateY(2px);
 }
 
 input {
@@ -220,7 +287,7 @@ input {
 .cardsbutton {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .button_red {background: url(Pictures/verdadeirofalso.png); background-size: 100%; width: 100px; height: 100px;
@@ -344,8 +411,9 @@ output {
 
 .landingline {margin-bottom: -7px;}
 .landingrect1 {float:left; width: 73%; padding-top: 20px; padding-right: 10px; margin-left: 0%; margin-right: 0.8%; position: absolute;}
-.landingrect2 {display: inline-flex; width: 46%; margin-right: 3px; vertical-align: top;}
 .square {display:inline-flex; width: 25%; margin: -2px;}
+
+
 
 .animatedtext {
     font-size: 3.7vw;
@@ -428,6 +496,35 @@ output {
 
 /* new animation */
 
+.flip {
+    display: inline-flex; width: 46%; margin-right: 3px; vertical-align: top;
+    background-color: transparent;
+    position: absolute;
+}
+
+.flipcard {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .flipcard {
+    transform: rotateY(90deg);
+}
+
+.front_side .back_side {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front_side {
+    background-color: black;  
+}
+
+.back_side {
+    transform: rotateY(-90deg) translateY(-96.3%);
+    background-color: white;  
+}
+
 .animate {
     opacity: 0;
   }
@@ -460,23 +557,6 @@ output {
     transition-delay: 250ms;
     animation: fade-right 1s ease-in;
   }
-
-.active.flip {
-    transition-delay: 5s;
-    animation: flip 1s ease-in;
-  }
-
-
-@keyframes flip {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
 
 @keyframes fade-top {
     0% {
