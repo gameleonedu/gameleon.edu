@@ -25,10 +25,16 @@ body, html {
   max-width: 100%;
   line-height: 1.8;
   margin: 0;
-  background: url(Pictures/kraft2.jpg);
   overflow-x: hidden;
 }
 
+.body1 {
+    background: url(Pictures/kraft2.jpg);
+}
+
+.body2 {
+    background: antiquewhite;
+}
 
 /* tabela */
 
@@ -483,15 +489,19 @@ output {
     {       
     .newgame {font-size: 12px; margin: 0; padding: 4px 6px 4px 6px; margin-top: 16px;}
     .carrinho {height: 18px; padding: 6px; margin-top: 14px;}
+    .stepbystep {display: none;}
+    .infostepbystep {display: none;}
     }
 
 /* Mobile Small*/
 
 @media only screen and (max-width: 400px)
     {       
-    .newgame {font-size: 10px; margin: 0; padding: 3px 5px 3px 5px; margin-top: 16px;}
-    .carrinho {height: 14px; padding: 4px; margin-top: 14px;}
+    .newgame {font-size: 10px; margin: 0; padding: 2px 5px 2px 5px; margin-top: 16px;}
+    .carrinho {height: 12px; padding: 2px; margin-top: 14px;}
     .rightalign {float: right; vertical-align: middle; width: 25%; margin-right: 2%;}
+    .actionbutton {height: 60px; width: 150px; font-size: 14px;}
+    #footer {font-size: 10px;}
     }
 
 /* new animation */
