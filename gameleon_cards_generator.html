@@ -26,9 +26,9 @@
                     <div class="leftalign">
                         <div id="navbar">
                             <a href="#about" class="baritem">Sobre Nós</a>
+                            <a href="#game" class="baritem">O Jogo</a>
                             <a href="gameleon_products.html" class="baritem">Produtos</a>
                             <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
-                            <a href="#contact" class="baritem">Contactos</a>
                         </div>
         
                         <div id="menu_icon" class="baritem"onclick="openclose(this)">
@@ -53,9 +53,9 @@
             <div id="drawer">
                 <nav>
                     <a href="#about" class="draweritem">Sobre Nós</a>
+                    <a href="#game" class="draweritem">O Jogo</a>
                     <a href="gameleon_products.html" class="draweritem">Produtos</a>
                     <a href="gameleon_under_construction.html" class="draweritem">Comunidade</a>
-                    <a href="#contact" class="draweritem">Contactos</a>
                 </nav>
             </div>
         
@@ -69,16 +69,18 @@
     
         <div class="noprint commonpadding">
     
-            <h3>GERADOR DE CARTAS PASSO A PASSO</h3>
+            <h3 style="text-align: left;">NOVO JOGO | CRIE O SEU BARALHO DE CARTAS</h3>
 
 <!--Upload das perguntas-->
 
-            <div class="tutorial">
+            <section id="geradorCartas_1" class="tutorial noprint">
 
-                <div class="stepbystep">
-                    <div class="stepbystepnumber">1</div>
-                    <p>Título do Jogo</p>
-                    <form action="/action_page.php" id="temajogo" oninput="titulo_1.value=tema.value; titulo_2.value=tema.value; titulo_3.value=tema.value; titulo_4.value=tema.value;
+<!--Título do jogo-->
+
+                <div>
+                    <div style="text-align: left;">Escrever em baixo o título do seu jogo</div>
+            
+                    <form style="text-align: left; width: 20%;" action="/action_page.php" id="temajogo" oninput="titulo_1.value=tema.value; titulo_2.value=tema.value; titulo_3.value=tema.value; titulo_4.value=tema.value;
                         titulo_5.value=tema.value; titulo_6.value=tema.value; titulo_7.value=tema.value; titulo_8.value=tema.value;
                         titulo_9.value=tema.value; titulo_10.value=tema.value; titulo_11.value=tema.value; titulo_12.value=tema.value;
                         titulo_13.value=tema.value; titulo_14.value=tema.value; titulo_15.value=tema.value; titulo_16.value=tema.value;
@@ -87,13 +89,377 @@
                         titulo_25.value=tema.value; titulo_26.value=tema.value; titulo_27.value=tema.value; titulo_28.value=tema.value;
                         titulo_29.value=tema.value; titulo_30.value=tema.value; titulo_31.value=tema.value; titulo_32.value=tema.value;
                         titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value;">
-                        <p><input type="text" id="tema" name="tema" value="Escrever aqui. Máximo 19 caracteres!"></p>
+                        <p><input type="text" id="tema" name="tema" style="font-size: 12px; padding: 10px;"value="O título pode ter no máximo 19 caracteres!"></p>
                     </form>
+                    </br>
+                    </div>
+                <div>
+
+<!--Tabela perguntas-->
+                <div style="text-align: left;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta. Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
+                <div class="tablestyle-wrapper">
+                <table id="table" class="tablestyle">
+                    <thead>
+                        <tr>
+                        <th class="numero">Nº Pergunta</th>
+                        <th>Tipo Pergunta</th>
+                        <th>Pergunta</th>
+                        <th>Opção A</br>Escolha Múltipla</th>
+                        <th>Opção B</br>Escolha Múltipla</th>
+                        <th>Opção C</br>Escolha Múltipla</th>
+                        <th>Resposta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Verdadeiro ou Falso</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Escolha Múltipla</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>Adivinha</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>                  
+                    </tbody>
+                </table>
                 </div>
 
+                </br>
+                <div style="text-align: left;">Em alternativa à tabela, pode fazer o download do template .csv, preencher com os conteúdos pretendidos e realizar o upload de conteúdos.</div>
+
+
+<!--Download template + upload-->
+
+                <div class="tutorial" style="height: 150px;">
+
+                <div style="float: left;">
+
                 <div class="stepbystep">
-                    <div class="stepbystepnumber">2</div>
-                    <p>Download</p>
+                    <p>Download template .csv</p>
                     <button>
                         <a href="Template.csv" download>
                             <l style="color: black; font-size: 12px; border-radius: 0;"> Template CSV</l>
@@ -102,24 +468,48 @@
                 </div>
 
                 <div class="stepbystep">
-                    <div class="stepbystepnumber">3</div>
-                    <p>Selecionar Ficheiro CSV</p>
+                    <p>Upload ficheiro .csv</p>
                     <input type="file" accept=".csv" id="picker" style="margin-left: 20px;">
-                    <table id="table" style="display: none; font-size: 12px; text-decoration: none;"></table>
-                </div>
-                    
-                <div class="stepbystep">
-                    <div class="stepbystepnumber">4</div>
-                    <p>Upload Perguntas</p>
-                    <button onclick="myFunction()" style="font-size: 12px; text-decoration: none;">Gerar cartas</button>
+                    <table id="table" style="display: none;"></table>
                 </div>
 
-                <div class="stepbystep">
-                    <div class="stepbystepnumber">5</div>
-                    <p>Imprimir cartas</p>
-                    <button onclick="printDiv('perguntas')" style="font-size: 12px; text-decoration: none;">Clicar aqui</button>
                 </div>
+
+<!--Gerar cartas-->
+                
+                <div style="float: right;">
+                    <button onclick="myFunction()"
+                    class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px;">
+                    Gerar cartas</button>
+                </div>
+            
+                 </div>
+
+            </section>
+
+<!--Carrossel categorias + imressão de cartas + regressar ao menu de conteúdos-->
+
+
+            <section id="geradorCartas_2">
+
+            <div class="tutorial" style="height: 100px;">
+
+            <div>
+                <button onclick="printDiv('perguntas')"
+                class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px; line-height: 1.5; float: right;">
+                Clique aqui para o download ou impressão</button>
             </div>
+            <div>
+                <button onclick="myFunctionReturn()"
+                class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px; line-height: 1.5; float: left;">
+                Regressar ao menu de gestão de conteúdos</button>
+            </div>
+
+
+            </div>
+
+
+            <p style="text-align: center;"></br>Clique sobre as categorias das cartas, para verificar a sua personalização do jogo. Caso prentenda realizar alguma alteração, todos os campos são editáveis.</p>
 
             <div class="cardsbutton">
                 <div class="buttoninfo">
@@ -136,12 +526,12 @@
                 </div>
             </div>
 
-            <br/>
-
-
-        </div>
+            </section>
+        </div>    
 
         <!--Módulo Perguntas Novo-->
+
+        <section id="geradorCartas_3">
 
         <div id="questions" class="print">
 
@@ -634,13 +1024,15 @@
                     <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/88x31.png" />
                 </a>
                 <br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>            
+                <br>Gameleon.edu@2023.</a>
             </div>
 
 
         </div>
+        </section>
     
         <!--Acaba aqui DIV Cartas-->
-
+    </br>
     </div>
 
 </div>
@@ -649,10 +1041,10 @@
   <!-- Footer -->
 <footer class="noprint">
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
-    <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/80x15.png" />
+    <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/80x15.png"/>
     </a>
     <br />Este trabalho está licenciado com uma Licença <a rel="license" style="color: black;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>
-    <br>Gameleon.Edu@2023.</a>
+    <br>Gameleon.edu@2023.</a>
 </footer>
   
   
