@@ -196,9 +196,27 @@ function openclose(x) {
         document.getElementById("EM_24B").innerHTML = document.getElementById("table").rows[24].cells[4].innerHTML;
         document.getElementById("EM_24C").innerHTML = document.getElementById("table").rows[24].cells[5].innerHTML;
 
+        var x = document.getElementById("geradorCartas_1");
+        var y = document.getElementById("geradorCartas_2");
+        var z = document.getElementById("geradorCartas_3");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none"; y.style.display = "block"; z.style.display = "block";
+        }
+
     }
 
-
+    function myFunctionReturn() {
+      var x = document.getElementById("geradorCartas_1");
+      var y = document.getElementById("geradorCartas_2");
+      var z = document.getElementById("geradorCartas_3");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block"; y.style.display = "none"; z.style.display = "none";
+      }  
+    }
   
 // Imprime janela
   
