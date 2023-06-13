@@ -199,10 +199,11 @@ function openclose(x) {
         var x = document.getElementById("geradorCartas_1");
         var y = document.getElementById("geradorCartas_2");
         var z = document.getElementById("geradorCartas_3");
+        var w = document.getElementById("novobaralhocartas");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
-          x.style.display = "none"; y.style.display = "block"; z.style.display = "block";
+          x.style.display = "none"; y.style.display = "block"; z.style.display = "block"; w.style.display ="none";
         }
 
     }
@@ -211,10 +212,11 @@ function openclose(x) {
       var x = document.getElementById("geradorCartas_1");
       var y = document.getElementById("geradorCartas_2");
       var z = document.getElementById("geradorCartas_3");
+      var w = document.getElementById("novobaralhocartas");
       if (x.style.display === "block") {
         x.style.display = "none";
       } else {
-        x.style.display = "block"; y.style.display = "none"; z.style.display = "none";
+        x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; w.style.display ="block";
       }  
     }
   

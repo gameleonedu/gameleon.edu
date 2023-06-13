@@ -7,7 +7,9 @@
 <meta name="author" content="gameleon">
 <meta name="description" content="gameleon">
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="print.css" media="print">
 <link rel="stylesheet" type="text/css" href="gameleon_css.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -38,8 +40,8 @@
                         </div>
                     </div>
         
-                    <div class="leftalign homealign">
-                        <a href="index.html" class="baritem">GAMELEON.EDU</a>
+                    <div class="homealign">
+                        <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="150px"></a>
                     </div>
                     
                     <div class="rightalign">
@@ -69,7 +71,7 @@
     
         <div class="noprint commonpadding">
     
-            <h3 style="text-align: left;">NOVO JOGO | CRIE O SEU BARALHO DE CARTAS</h3>
+            <h3 id="novobaralhocartas">O SEU BARALHO DE CARTAS</h3>
 
 <!--Upload das perguntas-->
 
@@ -88,7 +90,7 @@
                         titulo_21.value=tema.value; titulo_22.value=tema.value; titulo_23.value=tema.value; titulo_24.value=tema.value;
                         titulo_25.value=tema.value; titulo_26.value=tema.value; titulo_27.value=tema.value; titulo_28.value=tema.value;
                         titulo_29.value=tema.value; titulo_30.value=tema.value; titulo_31.value=tema.value; titulo_32.value=tema.value;
-                        titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value;">
+                        titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value; titulojogo.value=tema.value">
                         <p><input type="text" id="tema" name="tema" style="font-size: 12px; padding: 10px;"value="O título pode ter no máximo 19 caracteres!"></p>
                     </form>
                     </br>
@@ -479,8 +481,8 @@
                 
                 <div style="float: right;">
                     <button onclick="myFunction()"
-                    class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px;">
-                    Gerar cartas</button>
+                    class="actionbutton">
+                    GERAR CARTAS</button>
                 </div>
             
                  </div>
@@ -491,27 +493,19 @@
 
 
             <section id="geradorCartas_2">
+            
+            <h3 style="margin-bottom: 0%; width: 99%;">
+                <textarea id="titulojogo" class="questiontitleheadline"></textarea>
+            </h3>
 
-            <div class="tutorial" style="height: 100px;">
-
-            <div>
-                <button onclick="printDiv('perguntas')"
-                class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px; line-height: 1.5; float: right;">
-                Clique aqui para o download ou impressão</button>
-            </div>
-            <div>
-                <button onclick="myFunctionReturn()"
-                class="actionbutton" style="font-family: 'Josefin Sans', sans-serif; font-size: 16px; line-height: 1.5; float: left;">
-                Regressar ao menu de gestão de conteúdos</button>
-            </div>
-
-
-            </div>
-
-
-            <p style="text-align: center;"></br>Clique sobre as categorias das cartas, para verificar a sua personalização do jogo. Caso prentenda realizar alguma alteração, todos os campos são editáveis.</p>
+            <p style="text-align: center; margin-top: -60px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
 
             <div class="cardsbutton">
+                <div style="float: left;">
+                    <button onclick="myFunctionReturn()"
+                    class="actionbutton">
+                    REGRESSAR</button>
+                </div>
                 <div class="buttoninfo">
                     <button class="button_red" onclick="currentDiv(1)"></button>
                     <span class="textbuttoninfo textbuttoninfored">Verdadeiro ou Falso</span>
@@ -523,6 +517,11 @@
                 <div class="buttoninfo">
                     <button class="button_green" onclick="currentDiv(3)"></button>
                     <span class="textbuttoninfo textbuttoninfogreen">Adivinha</span>
+                </div>
+                <div style="float: right;">
+                    <button onclick="printDiv('perguntas')"
+                    class="actionbutton">
+                    DOWNLOAD</button>
                 </div>
             </div>
 
