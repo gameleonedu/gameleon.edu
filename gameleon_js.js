@@ -327,3 +327,132 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+// Mostrar elementos com o click
+
+function showonhover_index_red() {
+  var x = document.getElementById("info_vermelho");
+  var y = document.getElementById("botao_info_vermelho")
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+    y.style.visibility = "hidden"
+  } else {
+    x.style.visibility = "hidden";
+    y.style.visibility = "visible"
+  }
+}
+
+function showonhover_index_blue() {
+  var x = document.getElementById("info_azul");
+  var y = document.getElementById("botao_info_azul")
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+    y.style.visibility = "hidden"
+  } else {
+    x.style.visibility = "hidden";
+    y.style.visibility = "visible"
+  }
+}
+
+function showonhover_index_green() {
+  var x = document.getElementById("info_verde");
+  var y = document.getElementById("botao_info_verde")
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+    y.style.visibility = "hidden"
+  } else {
+    x.style.visibility = "hidden";
+    y.style.visibility = "visible"
+  }
+}
+
+function showonleave_index_red() {
+  var x = document.getElementById("info_vermelho");
+  var y = document.getElementById("botao_info_vermelho")
+  if (y.style.visibility === "hidden") {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden"
+  } else {
+    y.style.visibility = "hidden";
+    x.style.visibility = "visible"
+  }
+}
+
+function showonleave_index_blue() {
+  var x = document.getElementById("info_azul");
+  var y = document.getElementById("botao_info_azul")
+  if (y.style.visibility === "hidden") {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden"
+  } else {
+    y.style.visibility = "hidden";
+    x.style.visibility = "visible"
+  }
+}
+
+function showonleave_index_green() {
+  var x = document.getElementById("info_verde");
+  var y = document.getElementById("botao_info_verde")
+  if (y.style.visibility === "hidden") {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden"
+  } else {
+    y.style.visibility = "hidden";
+    x.style.visibility = "visible"
+  }
+}
+
+function onleavered() {
+  var x = document.getElementById("detalhe_baralhonovo");
+  var y = document.getElementById("baralhonovo");
+
+  if (y.style.visibility === "hidden") {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden";
+  } else {
+    y.style.visibility = "hidden";
+    x.style.visibility = "visible";
+  }
+}
+
+function showonhoverred() {
+  var x = document.getElementById("detalhe_baralhonovo");
+  var y = document.getElementById("baralhonovo");
+
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+    y.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "hidden";
+    y.style.visibility = "visible";
+  }
+}
+
+function onleavegreen() {
+  var x = document.getElementById("detalhe_baralhosfeitos");
+  var y = document.getElementById("baralhosfeitos");
+
+  if (y.style.visibility === "hidden") {
+    y.style.visibility = "visible";
+    x.style.visibility = "hidden";
+  } else {
+    y.style.visibility = "hidden";
+    x.style.visibility = "visible";
+  }
+}
+
+function showonhovergreen() {
+  var x = document.getElementById("detalhe_baralhosfeitos");
+  var y = document.getElementById("baralhosfeitos");
+
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+    y.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "hidden";
+    y.style.visibility = "visible";
+  }
+}
+
+
+
+

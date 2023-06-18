@@ -13,8 +13,6 @@
 <link rel="stylesheet" type="text/css" href="print.css" media="print">
 <link rel="stylesheet" type="text/css" href="gameleon_css.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-
 </head>
 
 <body class="body2">
@@ -27,8 +25,8 @@
             
                     <div class="leftalign">
                         <div id="navbar">
-                            <a href="#about" class="baritem">Sobre Nós</a>
-                            <a href="#game" class="baritem">O Jogo</a>
+                            <a href="gameleon_under_construction.html" class="baritem">Sobre Nós</a>
+                            <a href="gameleon_under_construction.html" class="baritem">O Jogo</a>
                             <a href="gameleon_products.html" class="baritem">Produtos</a>
                             <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
                         </div>
@@ -45,7 +43,7 @@
                     </div>
                     
                     <div class="rightalign">
-                        <a href="gameleon_cards_generator.html" class="newgame">NOVO JOGO</a>
+                        <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
                         <a href="gameleon_under_construction.html" class="carrinho"><img src="Pictures/carrinho.png"></a>
                     </div>
         
@@ -63,13 +61,13 @@
         
     </div>
 
-
 <div id="container" class="containercards">
 
 <!-- Página Geração Cartas -->
+
     <div id="cardgenerator">
     
-        <div class="noprint commonpadding">
+        <div class="conteudoscartas noprint">
     
             <h3 id="novobaralhocartas">O SEU BARALHO DE CARTAS</h3>
 
@@ -80,9 +78,9 @@
 <!--Título do jogo-->
 
                 <div>
-                    <div style="text-align: left;">Escrever em baixo o título do seu jogo</div>
+                    <div style="text-align: left; font-size: 20px;">Escrever em baixo o título do seu jogo</div>
             
-                    <form style="text-align: left; width: 280px;" action="/action_page.php" id="temajogo" oninput="titulo_1.value=tema.value; titulo_2.value=tema.value; titulo_3.value=tema.value; titulo_4.value=tema.value;
+                    <form style="text-align: left; width: 350px;" action="/action_page.php" id="temajogo" oninput="titulo_1.value=tema.value; titulo_2.value=tema.value; titulo_3.value=tema.value; titulo_4.value=tema.value;
                         titulo_5.value=tema.value; titulo_6.value=tema.value; titulo_7.value=tema.value; titulo_8.value=tema.value;
                         titulo_9.value=tema.value; titulo_10.value=tema.value; titulo_11.value=tema.value; titulo_12.value=tema.value;
                         titulo_13.value=tema.value; titulo_14.value=tema.value; titulo_15.value=tema.value; titulo_16.value=tema.value;
@@ -91,14 +89,15 @@
                         titulo_25.value=tema.value; titulo_26.value=tema.value; titulo_27.value=tema.value; titulo_28.value=tema.value;
                         titulo_29.value=tema.value; titulo_30.value=tema.value; titulo_31.value=tema.value; titulo_32.value=tema.value;
                         titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value; titulojogo.value=tema.value">
-                        <p><input type="text" id="tema" name="tema" style="font-size: 12px; padding: 10px;"value="O título pode ter no máximo 19 caracteres!"></p>
+                        <p><input type="text" id="tema" name="tema" style="font-size: 16px; padding: 10px;"value="O título pode ter no máximo 19 caracteres!"></p>
                     </form>
                     </br>
                     </div>
                 <div>
 
 <!--Tabela perguntas-->
-                <div style="text-align: left;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta. Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
+
+                <div style="text-align: left; font-size: 20px; margin-bottom: 20px; line-height: 1.3;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta.</br>Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
                 <div class="tablestyle-wrapper">
                 <table id="table" class="tablestyle">
                     <thead>
@@ -133,15 +132,6 @@
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Verdadeiro ou Falso</td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
                         <td>Verdadeiro ou Falso</td>
                         <td contenteditable="true"></td>
                         <td contenteditable="true"></td>
@@ -451,8 +441,7 @@
                 </div>
 
                 </br>
-                <div class="infostepbystep" style="text-align: left;">Em alternativa à tabela, pode fazer o download do template .csv, preencher com os conteúdos pretendidos e realizar o upload de conteúdos.</div>
-
+                <div class="infostepbystep" style="text-align: left;">Em alternativa à tabela, pode fazer o download do template .csv, editar com os seus conteúdos e realizar o upload.</div>
 
 <!--Download template + upload-->
 
@@ -491,14 +480,13 @@
 
 <!--Carrossel categorias + imressão de cartas + regressar ao menu de conteúdos-->
 
-
             <section id="geradorCartas_2">
             
-            <h3 style="margin-bottom: 0%; width: 99%;">
+            <h3 style="margin-bottom: 0%; width: 100%;">
                 <textarea id="titulojogo" class="questiontitleheadline"></textarea>
             </h3>
 
-            <p style="text-align: center; margin-top: -60px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
+            <p style="text-align: center; margin-top: -60px; font-size: 20px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
 
             <div class="cardsbutton">
                 <div style="float: left;">
@@ -507,18 +495,20 @@
                     REGRESSAR</button>
                 </div>
                 <div class="buttoninfo">
-                    <button class="button_red" onclick="currentDiv(1)"></button>
-                    <span class="textbuttoninfo textbuttoninfored">Verdadeiro ou Falso</span>
+                    <div class="buttoninfo buttoninfored">
+                        <button class="button_red" onclick="currentDiv(1)"></button>
+                        <span class="textbuttoninfo textbuttoninfored">Verdadeiro ou Falso</span>
+                    </div>
+                    <div class="buttoninfo buttoninfocyan">
+                        <button class="button_cyan" onclick="currentDiv(2)"></button>
+                        <span class="textbuttoninfo textbuttoninfocyan">Escolha Múltipla</span>
+                    </div>
+                    <div class="buttoninfo buttoninfogreen">
+                        <button class="button_green" onclick="currentDiv(3)"></button>
+                        <span class="textbuttoninfo textbuttoninfogreen">Adivinha</span>
+                    </div>
                 </div>
-                <div class="buttoninfo">
-                    <button class="button_cyan" onclick="currentDiv(2)"></button>
-                    <span class="textbuttoninfo textbuttoninfocyan">Escolha Múltipla</span>
-                </div>
-                <div class="buttoninfo">
-                    <button class="button_green" onclick="currentDiv(3)"></button>
-                    <span class="textbuttoninfo textbuttoninfogreen">Adivinha</span>
-                </div>
-                <div style="float: right;">
+                <div  style="float: right;">
                     <button onclick="printDiv('perguntas')"
                     class="actionbutton">
                     DOWNLOAD</button>
@@ -528,7 +518,7 @@
             </section>
         </div>    
 
-        <!--Módulo Perguntas Novo-->
+<!--Módulo Perguntas Novo-->
 
         <section id="geradorCartas_3">
 
@@ -1036,7 +1026,6 @@
 
 </div>
 
-
   <!-- Footer -->
 <footer class="noprint">
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
@@ -1046,8 +1035,6 @@
     <br>Gameleon.edu@2023.</a>
 </footer>
   
-  
-
 <script src="gameleon_js.js"></script>
   
 </body>

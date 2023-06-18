@@ -1,16 +1,19 @@
-Nº Pergunta;Tipo Pergunta;Pergunta;Opção A Escolha Múltipla;Opção B Escolha Múltipla;Opção C Escolha Múltipla;Resposta
-1;Certo/Errado;;;;;
-2;Certo/Errado;;;;;
-3;Certo/Errado;;;;;
-4;Certo/Errado;;;;;
-5;Certo/Errado;;;;;
-6;Certo/Errado;;;;;
-7;Certo/Errado;;;;;
-8;Certo/Errado;;;;;
-9;Certo/Errado;;;;;
-10;Certo/Errado;;;;;
-11;Certo/Errado;;;;;
-12;Certo/Errado;;;;;
+Nº Pergunta;Tipo Pergunta;Pergunta;"Opção A
+Escolha Múltipla";"Opção B
+Escolha Múltipla";"Opção C
+Escolha Múltipla";Resposta
+1;Verdadeiro ou Falso;;;;;
+2;Verdadeiro ou Falso;;;;;
+3;Verdadeiro ou Falso;;;;;
+4;Verdadeiro ou Falso;;;;;
+5;Verdadeiro ou Falso;;;;;
+6;Verdadeiro ou Falso;;;;;
+7;Verdadeiro ou Falso;;;;;
+8;Verdadeiro ou Falso;;;;;
+9;Verdadeiro ou Falso;;;;;
+10;Verdadeiro ou Falso;;;;;
+11;Verdadeiro ou Falso;;;;;
+12;Verdadeiro ou Falso;;;;;
 13;Escolha Múltipla;;;;;
 14;Escolha Múltipla;;;;;
 15;Escolha Múltipla;;;;;
