@@ -200,13 +200,13 @@ body, html {
 #drawer {
     display: none;
     background-color:black;
-    width: 100%;
-    position:relative;
-    padding: 12px;
-    padding-bottom: 10px;
+    width: 97%;
+    position:absolute;
+    z-index: 1;
+    margin-top: 60px;
+    padding: 20px;
     transition: all 0.2s linear;
     transform: translateX(-100%);
-    top: 0px;
     opacity: 0.95;
     }
 
