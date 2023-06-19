@@ -14,17 +14,25 @@ h3 {
 }
 
 .mainmenu {
-    position: fixed;
     width: 100%;
     z-index: 9999;
-    padding: 0;
 }
 
 header {
-    display: block;
-    position: absolute;
-    min-width: 100%;
+    width: 100%;
     z-index: 9999;
+    color: black;
+    border-bottom: solid 1px black;
+    background-color: antiquewhite;
+    position: fixed;
+    height: 60px;
+}
+
+.margem {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 10%;
+    text-align: center;
 }
 
 body, html {
@@ -32,6 +40,7 @@ body, html {
   line-height: 1.8;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .body1 {
@@ -97,18 +106,11 @@ body, html {
     width: 10vw; height: 10vw; background-color: black; display: inline-block;
 }
 
-.bar {
-    background-color:antiquewhite;
-    border-bottom: 1px solid black;
-    color: black;
-    z-index: 9999;
-}
-
 .baritem {
-    display:inline-flex;
+    display:inline-block;
     font-weight:lighter;
     color: black;
-    padding: 16px;
+    padding: 16px 10px 16px 10px;
     z-index: 9999;
 }
 
@@ -122,22 +124,22 @@ body, html {
 
 .commonpadding {padding: 16px;}
 
-.leftalign {float: left; margin-left: 7%;}
+.leftalign {float: left;}
 
-.homealign {position:absolute; width: 99.5%; text-align: center; z-index: -1;}
+.homealign {position: absolute; width: 20%; height: 25px; left: 40%;}
 
-.rightalign {float: right; vertical-align: middle; margin-right: 8%;}
+.rightalign {float: right; vertical-align: middle;}
 
 .centeralign {text-align: center; padding: 40px;}
 
 .newgame {padding: 8px 10px 8px 10px;
-    margin-top: 2px;
     background-color: black;
     color: white;
     vertical-align: middle;
-    display:inline-flex;
+    display:inline-block;
     font-weight:lighter;
     border-radius: 3px;
+    margin-top: -16px;
     }
 
 .newgame:link, .newgame:visited {
@@ -155,7 +157,7 @@ body, html {
     vertical-align: middle;
     display:inline-flex;
     font-weight:lighter;
-    font-size: 30px;
+    font-size: 2vw;
     border-radius: 3px;
     }
     
@@ -170,13 +172,8 @@ body, html {
 
 .carrinho {
     z-index: 9999;
-    width: 3%;
-    height: 27px;
-    vertical-align: middle;
-    text-align: center;
-    padding: 14px;
-    margin-top: 2px;
-    display:inline-flex;
+    padding: 18px;
+    display: inline-block; width: 30px;
     }
 
 /* Menu Icon */
@@ -203,7 +200,6 @@ body, html {
 #drawer {
     display: none;
     background-color:black;
-    margin-top: 55px;
     width: 100%;
     position:relative;
     padding: 12px;
@@ -231,7 +227,8 @@ body, html {
     width: 84%;
     margin-left: 8%;
     margin-right: 10%;
-    overflow-y: hidden;
+    overflow-y: visible;
+    text-align: center;
     }
 
 .containercards {background-color:transparent;
@@ -498,9 +495,12 @@ output {
 
 /* Lading Page - Menu Inicial */
 
-.landingline {margin-bottom: -7px}
+.landingline {text-align: center; margin-top: -5px; margin-bottom: -6px; position: relative;}
 .landingrect1 {float:left; width: 70%; padding-top: 20px; padding-right: 10px; margin-left: 0%; margin-right: 0.8%; position: absolute;}
-.square {display:inline-flex; width: 20%; margin: -1.3px;}
+.square {display:inline-block; width: 19%; text-align: center; vertical-align: middle;}
+
+#tabuleiro {display: block; width: 98%; text-align: center; border: dashed black 5px; margin-top: 250px;
+    padding-top: 26px; padding-bottom: 21px;}
 
 #info_vermelho {position: absolute; background-color: white; width: 23.4vw; height: 23.4vw;
     border: solid 9px #e62f1e; padding: 4vw; font-size: 2vw; right: 8.75%; line-height: 1.5;
@@ -514,8 +514,11 @@ output {
     border: solid 9px #4ead33; padding: 4vw; font-size: 2vw; right: 8.75%; line-height: 1.5;
     visibility: hidden; z-index: 1;}
 
+#botao_info_vermelho {z-index: 1; width: 100%; text-align: center;}
+#botao_info_azul {z-index: 1; width: 100%; text-align: center;}
+#botao_info_verde {z-index: 1; width: 100%; text-align: center;}
 
-.botao_plus {width: 20%; height:20%; margin-left: -60%; margin-top: 5%;}
+.botao_plus {width: 30%; height:30%;}
 
 
 .animatedtext {
@@ -584,7 +587,7 @@ output {
 
 @media only screen and (max-width: 870px)
     {       
-    .newgame {font-size: 12px; margin: 0; padding: 4px 6px 4px 6px; margin-top: 16px;}
+    .newgame {font-size: 12px; padding: 4px 6px 4px 6px;}
     .carrinho {height: 18px; padding: 6px; margin-top: 14px;}
     .stepbystep {display: none;}
     .infostepbystep {display: none;}
@@ -595,7 +598,7 @@ output {
 
 @media only screen and (max-width: 400px)
     {       
-    .newgame {font-size: 10px; margin: 0; padding: 2px 5px 2px 5px; margin-top: 16px;}
+    .newgame {font-size: 10px; padding: 2px 5px 2px 5px;}
     .carrinho {height: 12px; padding: 2px; margin-top: 14px;}
     .rightalign {float: right; vertical-align: middle; width: 25%; margin-right: 2%;}
     #footer {font-size: 10px;}

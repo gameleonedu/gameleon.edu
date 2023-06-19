@@ -20,7 +20,8 @@
     <div class="mainmenu noprint">
       
             <header class="bar noprint">
-                <div style="text-align: center;">
+            
+                <div class="margem">
         
                     <div class="leftalign">
                         <div id="navbar">
@@ -38,12 +39,16 @@
                     </div>
         
                     <div class="homealign">
-                        <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="150px"></a>
+                        <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="110vw"></a>
                     </div>
                     
                     <div class="rightalign">
-                        <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
-                        <a href="gameleon_under_construction.html" class="carrinho"><img src="Pictures/carrinho.png"></a>
+                        <div style="display: inline-block;">
+                            <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
+                        </div>
+                        <div class="carrinho" style=>
+                            <a href="gameleon_under_construction.html"><img src="Pictures/carrinho.png" width="100%"></a>
+                        </div>
                     </div>
         
                 </div>
@@ -79,11 +84,10 @@
             </div>
         <section>
         
-        <section style="padding: 10px 10px 6px 10px; margin-top: 250px; border: dashed black 2px;">
+        <section id="tabuleiro">
             <div class="landingline">
                 <div class="square animate fade-left">
-                    <div><img src="Pictures/transparente.png" width="100%" height="100%" margin="0"></div>
-                    <div style="min-width: 100%; padding-bottom: 35%; font-size: 3vw; text-align: center;">
+                    <div style="width: 100%; font-size: 3vw; text-align: center;">
                         descobrir
                     </div>
                 </div>
@@ -95,14 +99,13 @@
                 </div>
                 <div class="square">
                     <img src="Pictures/trescores.png" width="100%" height="100%" margin="0" class="animate fade-bottom">
-                    <div id="info_vermelho" onmouseleave="showonleave_index_red()">
+                    <div id="info_vermelho" onclick="showonleave_index_red()">
                         <div><p style="font-size: 3vw;">um jogo</p>com conteúdos personalizáveis com várias categorias de perguntas</div>
                     </div>   
                 </div>
                 <div class="square">
-                    <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
-                    <div id="botao_info_vermelho" style="min-width: 100%; margin: auto;">
-                        <img src="Pictures/plus_vermelho.svg" class="botao_plus" onmouseover="showonhover_index_red()">
+                    <div id="botao_info_vermelho">
+                        <img src="Pictures/plus_vermelho.svg" class="botao_plus" onclick="showonhover_index_red()">
                     </div>
                 </div> 
             </div>
@@ -131,24 +134,22 @@
                 </div>
                 <div class="square">
                     <img src="Pictures/trescores.png" width="100%" height="100%" margin="0" class="animate fade-right">
-                    <div id="info_azul" onmouseleave="showonleave_index_blue()">
+                    <div id="info_azul" onclick="showonleave_index_blue()">
                         <div><p style="font-size: 3vw;">uma plataforma</p>que permite criar de forma simples todas as cartas para um novo jogo</div>
                     </div>   
                 </div>
                 <div class="square">
-                    <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
-                    <div id="botao_info_azul" style="min-width: 100%; margin: auto;">
-                        <img src="Pictures/plus_azul.svg" class="botao_plus" onmouseover="showonhover_index_blue()">
+                    <div id="botao_info_azul">
+                        <img src="Pictures/plus_azul.svg" class="botao_plus" onclick="showonhover_index_blue()">
                     </div>
                 </div>
                 <div class="square">
                     <img src="Pictures/verdadeirofalso.png" width="100%" height="100%" margin="0" class="animate fade-top">
-                    <div class="animate fade-right" style="min-width: 100%; font-size: 3vw; line-height: 1.3; text-align: center; margin-top: 35%;">
+                </div>
+                <div class="square animate fade-right">
+                    <div style="width: 100%; font-size: 3vw; text-align: center;">
                         criar
                     </div>
-                </div>
-                <div class="square">
-                    <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
                 </div>
             </div>
 
@@ -164,7 +165,7 @@
                 </div>
                 <div class="square animate fade-right">
                     <img src="Pictures/adivinha.png" width="100%" height="100%" margin="0">
-                    <div id="info_verde" onmouseleave="showonleave_index_green()">
+                    <div id="info_verde" onclick="showonleave_index_green()">
                         <div><p style="font-size: 3vw;">vamos começar?</p>descubra aqui todos os detalhes sobre o nosso jogo e plataforma</div>
                     </div>   
                 </div>
@@ -176,12 +177,11 @@
             <div class="landingline">
                 <div class="square animate fade-left">
                     <img src="Pictures/trescores.png" width="100%" height="100%" margin="0">
-                    <div style="min-width: 200%; font-size: 3vw; line-height: 1.3; text-align: center; margin-top: 35%;">
+                </div>
+                <div class="square animate fade-left">
+                    <div style="width: 200%; font-size: 3vw; text-align: center;">
                         multiplas opções
                     </div>
-                </div>
-                <div class="square">
-                    <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
                 </div>
                 <div class="square">
                     <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
@@ -190,9 +190,8 @@
                     <img src="Pictures/verdadeirofalso.png" width="100%" height="100%" margin="0" class=" animate fade-bottom">
                 </div>
                 <div class="square">
-                    <img src="Pictures/transparente.png" width="100%" height="100%" margin="0">
-                    <div id="botao_info_verde" style="min-width: 100%; margin: auto;">
-                        <img src="Pictures/plus_verde.svg" class="botao_plus" onmouseover="showonhover_index_green()" onclick="showonclick()">
+                    <div id="botao_info_verde">
+                        <img src="Pictures/plus_verde.svg" class="botao_plus" onclick="showonhover_index_green()" onclick="showonclick()">
                     </div>
                 </div>
             </div>
