@@ -18,48 +18,52 @@
 <body class="body2">
 
     <div class="mainmenu noprint">
+      
+        <header class="bar noprint">
         
-            <header class="bar noprint">
-                <div style="text-align: center;">
-        
-            
-                    <div class="leftalign">
-                        <div id="navbar">
-                            <a href="gameleon_under_construction.html" class="baritem">Sobre Nós</a>
-                            <a href="gameleon_under_construction.html" class="baritem">O Jogo</a>
-                            <a href="gameleon_products.html" class="baritem">Produtos</a>
-                            <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
-                        </div>
-        
-                        <div id="menu_icon" class="baritem"onclick="openclose(this)">
-                            <div id="bar1"> </div>
-                            <div id="bar2"> </div>
-                            <div id="bar3"> </div>
-                        </div>
+            <div class="margem">
+    
+                <div class="leftalign">
+                    <div id="navbar">
+                        <a href="gameleon_under_construction.html" class="baritem">Sobre Nós</a>
+                        <a href="gameleon_under_construction.html" class="baritem">O Jogo</a>
+                        <a href="gameleon_products.html" class="baritem">Produtos</a>
+                        <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
                     </div>
-        
-                    <div class="homealign">
-                        <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="150px"></a>
+    
+                    <div id="menu_icon" class="baritem"onclick="openclose(this)">
+                        <div id="bar1"> </div>
+                        <div id="bar2"> </div>
+                        <div id="bar3"> </div>
                     </div>
-                    
-                    <div class="rightalign">
-                        <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
-                        <a href="gameleon_under_construction.html" class="carrinho"><img src="Pictures/carrinho.png"></a>
-                    </div>
-        
                 </div>
-            </header>
-        
-            <div id="drawer">
-                <nav>
-                    <a href="gameleon_under_construction.html" class="draweritem">Sobre Nós</a>
-                    <a href="gameleon_under_construction.html" class="draweritem">O Jogo</a>
-                    <a href="gameleon_products.html" class="draweritem">Produtos</a>
-                    <a href="gameleon_under_construction.html" class="draweritem">Comunidade</a>
-                </nav>
+    
+                <div class="homealign">
+                    <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="110vw"></a>
+                </div>
+                
+                <div class="rightalign">
+                    <div style="display: inline-block;">
+                        <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
+                    </div>
+                    <div class="carrinho" style=>
+                        <a href="gameleon_under_construction.html"><img src="Pictures/carrinho.png" width="100%"></a>
+                    </div>
+                </div>
+    
             </div>
-        
-    </div>
+        </header>
+    
+        <div id="drawer">
+            <nav>
+                <a href="gameleon_under_construction.html" class="draweritem">Sobre Nós</a>
+                <a href="gameleon_under_construction.html" class="draweritem">O Jogo</a>
+                <a href="gameleon_products.html" class="draweritem">Produtos</a>
+                <a href="gameleon_under_construction.html" class="draweritem">Comunidade</a>
+            </nav>
+        </div>
+    
+</div>
 
 
 <div class="mycontainer" style="height: 100vh;">
@@ -71,9 +75,9 @@
         <div class="inline">
             <div class="inlinebaralho">
                 <a id="detalhe_baralhonovo" class="floating" style="text-decoration: none" onmouseleave="onleavered()" href="gameleon_cards_generator.html">
-                    <img src="Pictures/caixa_baralhonovo.png" width="300px" height="300px">
-                    <p style="color: white; margin-top: -280px; font-size: 20px;">personalizar conteúdos?</p>
-                    <p style="color: white; margin-top: 170px; font-size: 22px;">CRIAR NOVO BARALHO</p>
+                    <img src="Pictures/caixa_baralhonovo.png" class="option_cardset">
+                    <p class="font_option_cardset_20">personalizar conteúdos?</p>
+                    <p class="font_option_cardset_22">CRIAR NOVO BARALHO</p>
                 </a>
                 <div id="baralhonovo" class="alignvertical" onmouseover="showonhoverred()">
                     <img src="Pictures/plus_vermelho.svg" width="50%">
@@ -83,9 +87,9 @@
         <div class="inline">
             <div class="inlinebaralho">
                 <a id="detalhe_baralhosfeitos" class="floating" style="text-decoration: none" onmouseleave="onleavegreen()" href="gameleon_products.html">
-                    <img src="Pictures/caixa_baralhosfeitos.png" width="300px" height="300px">
-                    <p style="color: white; margin-top: -280px; font-size: 20px;">conhecer os nossos jogos?</p>
-                    <p style="color: white; margin-top: 170px; font-size: 22px;">DOWNLOAD AQUI</p>
+                    <img src="Pictures/caixa_baralhosfeitos.png" class="option_cardset">
+                    <p class="font_option_cardset_20">conhecer os nossos jogos?</p>
+                    <p class="font_option_cardset_22">DOWNLOAD AQUI</p>
                 </a>
                 <div id="baralhosfeitos" class="alignvertical" onmouseover="showonhovergreen()">
                     <img src="Pictures/plus_verde.svg" width="50%">
@@ -94,12 +98,12 @@
         </div>
     </div>
 
-    <div>
-        <img src="Pictures/gameleon_fundo.png" width="50%" style="position: absolute; left: 0%; bottom: 0;">
+    <div style="position: absolute; width:100%; bottom: -20px; z-index: -1; text-align: left;">
+        <img src="Pictures/gameleon_fundo.png" width="50%"  >
     </div>
 
-    <div>
-        <img src="Pictures/lingua_modulonovojogo.png" height="90%" style="position: absolute; right: 8%; bottom: -10px; z-index: -1;">
+    <div style="position: absolute; width: 100%; left: -10%; bottom: -10px; z-index: -1; text-align: right;">
+        <img src="Pictures/lingua_modulonovojogo.png" width="30%">
     </div>
 
 </div>

@@ -10,7 +10,6 @@ h3 {
     font-size: 30px;
     text-align: center;
     margin-top: 100px;
-    width: 100%;
 }
 
 .mainmenu {
@@ -31,7 +30,7 @@ header {
 .margem {
     width: 84%;
     margin-left: 8%;
-    margin-right: 10%;
+    margin-right: 8%;
     text-align: center;
 }
 
@@ -122,11 +121,11 @@ body, html {
     color: black;
     background-color: lightgray;}
 
-.commonpadding {padding: 16px;}
+.commonpadding {padding: 0px;}
 
 .leftalign {float: left;}
 
-.homealign {position: absolute; width: 20%; height: 25px; left: 40%;}
+.homealign {position: absolute; width: 83%; height: 25px; text-align: center;}
 
 .rightalign {float: right; vertical-align: middle;}
 
@@ -140,6 +139,7 @@ body, html {
     font-weight:lighter;
     border-radius: 3px;
     margin-top: -16px;
+    z-index: 9999;
     }
 
 .newgame:link, .newgame:visited {
@@ -201,7 +201,7 @@ body, html {
     display: none;
     background-color:black;
     width: 97%;
-    position:absolute;
+    position: fixed;
     z-index: 1;
     margin-top: 60px;
     padding: 20px;
@@ -226,7 +226,7 @@ body, html {
     min-height: 100%;
     width: 84%;
     margin-left: 8%;
-    margin-right: 10%;
+    margin-right: 8%;
     overflow-y: visible;
     text-align: center;
     }
@@ -288,10 +288,14 @@ footer {
 #detalhe_baralhonovo {visibility: hidden;}
 #detalhe_baralhosfeitos {visibility: hidden;}
 
+.option_cardset {width: 300px; height: 300px;}
+.font_option_cardset_20 {color: white; font-size: 20px; margin-top: -280px;}
+.font_option_cardset_22 {color: white; font-size: 22px; margin-top: 170px;}
+
 .conteudoscartas {
     width: 84%;
     margin-left: 8%;
-    margin-right: 10%;
+    margin-right: 8%;
     }
 
 #geradorCartas_2 {
@@ -499,7 +503,7 @@ output {
 .landingrect1 {float:left; width: 70%; padding-top: 20px; padding-right: 10px; margin-left: 0%; margin-right: 0.8%; position: absolute;}
 .square {display:inline-block; width: 19%; text-align: center; vertical-align: middle;}
 
-#tabuleiro {display: block; width: 98%; text-align: center; border: dashed black 5px; margin-top: 250px;
+#tabuleiro {display: block; width: 99%; text-align: center; border: dashed black 5px; margin-top: 250px;
     padding-top: 26px; padding-bottom: 21px;}
 
 #info_vermelho {position: absolute; background-color: white; width: 23.4vw; height: 23.4vw;
@@ -585,22 +589,24 @@ output {
 
 /* Mobile */
 
-@media only screen and (max-width: 870px)
+@media only screen and (max-width: 1000px)
     {       
-    .newgame {font-size: 12px; padding: 4px 6px 4px 6px;}
-    .carrinho {height: 18px; padding: 6px; margin-top: 14px;}
+    .newgame {font-size: 12px; padding: 8px 10px 8px 10px; margin-top: -6px;}
+    .carrinho {display: inline-block; width: 20px;}
     .stepbystep {display: none;}
     .infostepbystep {display: none;}
     .actionbutton {height: 40px; width: 90px; font-size: 11px;}
+    .inlinebaralho {display: block; width: 200px; height: 200px;}
+    .option_cardset {width: 200px; height: 200px;}
+    .font_option_cardset_20 {color: white; font-size: 14px;margin-top: -190px;}
+    .font_option_cardset_22 {color: white; font-size: 16px;margin-top: 110px;}
     }
 
 /* Mobile Small*/
 
 @media only screen and (max-width: 400px)
     {       
-    .newgame {font-size: 10px; padding: 2px 5px 2px 5px;}
-    .carrinho {height: 12px; padding: 2px; margin-top: 14px;}
-    .rightalign {float: right; vertical-align: middle; width: 25%; margin-right: 2%;}
+    .newgame {font-size: 10px; padding: 8px 10px 8px 10px; margin-top: -6px;}
     #footer {font-size: 10px;}
     }
 
