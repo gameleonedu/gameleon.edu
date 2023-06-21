@@ -9,7 +9,7 @@ font-family: 'Josefin Sans', sans-serif;
 h3 {
     font-size: 30px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .mainmenu {
@@ -125,7 +125,7 @@ body, html {
 
 .leftalign {float: left;}
 
-.homealign {position: absolute; width: 83%; height: 25px; text-align: center;}
+.homealign {position: absolute; width: 83.3%; height: 25px; text-align: center;}
 
 .rightalign {float: right; vertical-align: middle;}
 
@@ -506,16 +506,16 @@ output {
 #tabuleiro {display: block; width: 99%; text-align: center; border: dashed black 5px; margin-top: 250px;
     padding-top: 26px; padding-bottom: 21px;}
 
-#info_vermelho {position: absolute; background-color: white; width: 23.4vw; height: 23.4vw;
-    border: solid 9px #e62f1e; padding: 4vw; font-size: 2vw; right: 8.75%; line-height: 1.5;
+#info_vermelho {position: absolute; background-color: white; width: 25vw; height: 25vw;
+    border: solid 9px #e62f1e; padding: 32px; font-size: 2vw; right: 30%; top: 0; line-height: 1.5;
     visibility: hidden; z-index: 1;}
 
-#info_azul {position: absolute; background-color: white; width: 23.4vw; height: 23.4vw;
-    border: solid 9px #009fe3; padding: 4vw; font-size: 2vw; right: 41.8%; line-height: 1.5;
+#info_azul {position: absolute; background-color: white; width: 25vw; height: 25vw;
+    border: solid 9px #009fe3; padding: 32px; font-size: 2vw; right: 45%; top: 0; line-height: 1.5;
     visibility: hidden; z-index: 1;}
 
-#info_verde {position: absolute; background-color: white; width: 23.4vw; height: 23.4vw;
-    border: solid 9px #4ead33; padding: 4vw; font-size: 2vw; right: 8.75%; line-height: 1.5;
+#info_verde {position: absolute; background-color: white; width: 25vw; height: 25vw;
+    border: solid 9px #4ead33; padding: 32px; font-size: 2vw; right: 10%; top: 0; line-height: 1.5;
     visibility: hidden; z-index: 1;}
 
 #botao_info_vermelho {z-index: 1; width: 100%; text-align: center;}
@@ -540,19 +540,18 @@ output {
 
 .product {
     display: inline-block;
+    width: 300px;
     text-align: center;
     margin: 2%;
 }
 
 .productimg {
-    width: 400px;
-    height: 400px;
-    background-color: white;
+    background-color: transparent;
     position: relative;
 }
 
 .producttext {
-    width: 400px;
+    width: 300px;
     height: 50px;
     position: relative;
     text-align: center;
@@ -600,6 +599,8 @@ output {
     .option_cardset {width: 200px; height: 200px;}
     .font_option_cardset_20 {color: white; font-size: 14px;margin-top: -190px;}
     .font_option_cardset_22 {color: white; font-size: 16px;margin-top: 110px;}
+    #tabuleiro {display: block; width: 97%; text-align: center; border: dashed black 5px; margin-top: 250px;
+        padding-top: 26px; padding-bottom: 21px;}
     }
 
 /* Mobile*/
