@@ -9,7 +9,7 @@
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Lato&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="print.css" media="print">
 <link rel="stylesheet" type="text/css" href="gameleon_css.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,7 +26,7 @@
                 <div class="leftalign">
                     <div id="navbar">
                         <a href="gameleon_under_construction.html" class="baritem">Sobre Nós</a>
-                        <a href="gameleon_under_construction.html" class="baritem">O Jogo</a>
+                        <a href="gameleon_gamerules.html" class="baritem">O Jogo</a>
                         <a href="gameleon_products.html" class="baritem">Produtos</a>
                         <a href="gameleon_under_construction.html" class="baritem">Comunidade</a>
                     </div>
@@ -47,7 +47,7 @@
                         <a href="gameleon_start_cards_generator.html" class="newgame">NOVO JOGO</a>
                     </div>
                     <div class="carrinho" style=>
-                        <a href="gameleon_under_construction.html"><img src="Pictures/carrinho.png" width="100%"></a>
+                        <a href="gameleon_under_construction.html"><img src="Pictures/login.png" width="85%"></a>
                     </div>
                 </div>
     
@@ -57,7 +57,7 @@
         <div id="drawer">
             <nav>
                 <a href="gameleon_under_construction.html" class="draweritem">Sobre Nós</a>
-                <a href="gameleon_under_construction.html" class="draweritem">O Jogo</a>
+                <a href="gameleon_gamerules.html" class="draweritem">O Jogo</a>
                 <a href="gameleon_products.html" class="draweritem">Produtos</a>
                 <a href="gameleon_under_construction.html" class="draweritem">Comunidade</a>
             </nav>
@@ -93,7 +93,7 @@
                         titulo_25.value=tema.value; titulo_26.value=tema.value; titulo_27.value=tema.value; titulo_28.value=tema.value;
                         titulo_29.value=tema.value; titulo_30.value=tema.value; titulo_31.value=tema.value; titulo_32.value=tema.value;
                         titulo_33.value=tema.value; titulo_34.value=tema.value; titulo_35.value=tema.value; titulo_36.value=tema.value; titulojogo.value=tema.value">
-                        <p><input type="text" id="tema" name="tema" style="font-size: 16px; padding: 10px;"value="O título pode ter no máximo 19 caracteres!"></p>
+                        <p style="border: none; background-color: white;"><input type="text" id="tema" name="tema" style="font-size: 16px; padding: 10px; border-style: none;"value="O título pode ter no máximo 19 caracteres!"></p>
                     </form>
                     </br>
                     </div>
@@ -101,7 +101,11 @@
 
 <!--Tabela perguntas-->
 
-                <div style="text-align: left; font-size: 20px; margin-bottom: 20px; line-height: 1.3;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta.</br>Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
+                <div style="text-align: left; font-size: 20px; margin-bottom: 75px; line-height: 1.8;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta.</br>Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
+                <div style="text-align: right; margin-top: -150px; margin-bottom: -10px;">
+                    <img src="Pictures/gameleon_focus.png" width="20%" style="margin-right: 20px;">
+                </div>
+                
                 <div class="tablestyle-wrapper">
                 <table id="table" class="tablestyle">
                     <thead>
@@ -445,7 +449,7 @@
                 </div>
 
                 </br>
-                <div class="infostepbystep" style="text-align: left;">Em alternativa à tabela, pode fazer o download do template .csv, editar com os seus conteúdos e realizar o upload.</div>
+                <div class="infostepbystep" style="text-align: left; font-size: 20px;">Em alternativa à tabela, pode fazer o download do template .csv, editar com os seus conteúdos e realizar o upload.</div>
 
 <!--Download template + upload-->
 
@@ -454,17 +458,25 @@
                 <div style="float: left;">
 
                 <div class="stepbystep">
+                    <div style="margin: auto;">
                     <p>Download template .csv</p>
-                    <button>
-                        <a href="Template.csv" download style="text-decoration: none; color: black;">
+                    </div>
+                    <div style="margin: auto;">
+                    <button >
+                        <a href="Template.csv" download style=" padding: 6px 12px 6px 12px; text-decoration: none; color: black;">
                             <l style="font-size: 12px; border-radius: 0;"> Template CSV</l>
                         </a>
-                    </button>    
+                    </button>
+                    </div>    
                 </div>
 
                 <div class="stepbystep">
+                    <div style="margin: auto;">
                     <p>Upload ficheiro .csv</p>
+                    </div>
+                    <div style="margin: auto; text-align: center;">
                     <input type="file" accept=".csv" id="picker" style="margin-left: 20px;">
+                    </div>
                     <table id="table" style="display: none;"></table>
                 </div>
 
@@ -493,29 +505,22 @@
             <p style="text-align: center; margin-top: -60px; font-size: 20px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
 
             <div class="cardsbutton">
-                <div style="float: left;">
-                    <button onclick="myFunctionReturn()"
-                    class="actionbutton">
-                    REGRESSAR</button>
-                </div>
                 <div class="buttoninfo">
                     <div class="buttoninfo buttoninfored">
                         <button class="button_red" onclick="currentDiv(1)"></button>
+                        </br>
                         <span class="textbuttoninfo textbuttoninfored">Verdadeiro ou Falso</span>
                     </div>
                     <div class="buttoninfo buttoninfocyan">
                         <button class="button_cyan" onclick="currentDiv(2)"></button>
+                        </br>
                         <span class="textbuttoninfo textbuttoninfocyan">Escolha Múltipla</span>
                     </div>
                     <div class="buttoninfo buttoninfogreen">
                         <button class="button_green" onclick="currentDiv(3)"></button>
+                        </br>
                         <span class="textbuttoninfo textbuttoninfogreen">Adivinha</span>
                     </div>
-                </div>
-                <div  style="float: right;">
-                    <button onclick="printDiv('perguntas')"
-                    class="actionbutton">
-                    DOWNLOAD</button>
                 </div>
             </div>
 
@@ -1013,16 +1018,30 @@
             </div>
 
             <div class="mycontainer creativecommons">
-                </br></br>
+                </br></br></br></br>
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
                     <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/88x31.png" />
                 </a>
-                <br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>            
+                <br />Este jogo está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>            
                 <br>Gameleon.edu@2023.</a>
             </div>
 
         </br>
         </div>
+
+        <div class="cardsbutton noprint">
+            <div style="display: inline-block;">
+                <button onclick="myFunctionReturn()"
+                class="actionbutton">
+                REGRESSAR</button>
+            </div>
+            <div style="display: inline-block;">
+                <button onclick="printDiv('perguntas')"
+                class="actionbutton">
+                DOWNLOAD</button>
+            </div>
+        </div>        
+
         </section>
     
         <!--Acaba aqui DIV Cartas-->
@@ -1036,7 +1055,7 @@
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">
     <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/pt/80x15.png"/>
     </a>
-    <br />Este trabalho está licenciado com uma Licença <a rel="license" style="color: black;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>
+    <br />Esta plataforma está licenciada com uma Licença <a rel="license" style="color: black;" href="http://creativecommons.org/licenses/by-nc-sa/3.0/pt/">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 3.0 Portugal</a>
     <br>Gameleon.edu@2023.</a>
 </footer>
   
