@@ -56,7 +56,9 @@ body, html {
 
 .smallsize {width: 70%;}
 
-li {font-size: 25px;}
+.regras {font-size: 24px;}
+
+.numero {font-size: 40px; font-weight: 600; margin-bottom: -50px; margin-top: 30px;}
 
 /* tabela */
 
@@ -143,9 +145,12 @@ li {font-size: 25px;}
 
 .categorias {display: inline-block; width: 15vw; margin: 2vw;}
 
-.professor {float: right; margin-top: -50px;}
+.professor {float: right; margin-top: -150px;}
 .linha1 {text-align: left; padding-top: 50px; width: 100%;}
 .linha2 {text-align: left; padding-top: 50px; width: 45%;}
+
+.pontuacao1 {width: 50%; float: right; text-align: left;}
+.pontuacao2 {width: 45%; float: left;}
 
 .newgame {padding: 8px 10px 8px 10px;
     background-color: black;
@@ -598,7 +603,7 @@ output {
     #tabuleiro {display: block; width: 97%; text-align: center; border: dashed black 5px; margin: auto; margin-top: 250px;
         padding-top: 26px; padding-bottom: 21px;}
     
-    .professor {display: block; width: 100%; margin-top: 0;}
+    .professor {position: relative;; width: 84%; margin: 4% 8% 8% 8%;}
     .linha2 {width: 100%;}
     }      
         
@@ -619,7 +624,9 @@ output {
     #tabuleiro {display: none;}
     .categorias {display: block; width: 35vw; margin: auto;}
     .smallsize {width: 100%;}
-    li {font-size: 20px;}
+    li {font-size: 24px;}
+    .pontuacao1 {width: 100%; text-align: left;}
+    .pontuacao2 {width: 100%;}
     }
 
 /* Mobile*/
