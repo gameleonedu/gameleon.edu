@@ -665,9 +665,12 @@ output {
 /* Mobile*/
 
 @media only screen and (max-width: 500px)
-    {       
-    .newgame {font-size: 10px; padding: 4px 8px 4px 8px;}
+    {
+    h3 {font-size: 24px;}       
+    .newgame {font-size: 10px; padding: 4px;}
     #footer {font-size: 10px;}
+    .mycontainer {font-size: 16px;}
+    .botão {font-size: 24px;}
     }
 
 
