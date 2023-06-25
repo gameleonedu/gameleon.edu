@@ -147,6 +147,9 @@ body, html {
 
 .centeralign {text-align: center; padding: 40px;}
 
+.initialpage1 {font-weight:900; font-size: 6vw; line-height: 0; text-align: right; padding-right: 12px;}
+.initialpage2 {font-family: 'Lato', sans-serif; text-align: right; margin-bottom: -10%; padding-right: 12px;}
+
 .categorias {display: inline-block; width: 15vw; margin: 2vw;}
 
 .professor {float: right; margin-top: -150px;}
@@ -556,24 +559,28 @@ output {
 
 .product {
     display: inline-block;
-    width: 300px;
+    width: 250px;
+    height: 250px;
     text-align: center;
-    margin: 2%;
+    margin: 10px 10px 60px 10px;
 }
 
 .productimg {
+    height: 250px;
     background-color: transparent;
+    vertical-align: middle;
     position: relative;
+    background-image: url(Pictures/kraft2.jpg);
 }
 
 .producttext {
-    width: 300px;
+    width: 250px;
     height: 50px;
     position: relative;
     text-align: center;
     font-weight: lighter;
     font-size: 18px;
-    padding-top: 16px;
+    padding-top: 8px;
 }
 
 /* Contador */    
@@ -667,12 +674,12 @@ output {
 @media only screen and (max-width: 500px)
     {
     h3 {font-size: 24px;}       
-    .newgame {font-size: 8px; padding: 4px;}
+    .newgame {font-size: 10px; padding: 4px;}
     .smallletter {font-size: 4px;}
     .mycontainer {font-size: 16px;}
     .botão {font-size: 24px;}
-    .rules {font-size: 14px;}
-    .homelogo {width: 80px;}
+    .rules {font-size: 18px;}
+    .homelogo {width: 90px;}
     .marginlandingheadline {margin-top: 0;}
 
     #timer {
@@ -703,6 +710,9 @@ output {
 
     .baralhosprodutosmobile {display: block;}
     .inlinebaralho {display: none;}
+
+    .initialpage1 {font-size: 8vw;}
+    .initialpage2 {font-size: 6vw;}
 
     }
 
