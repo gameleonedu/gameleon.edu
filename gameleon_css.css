@@ -54,6 +54,8 @@ body, html {
     background-color: antiquewhite;
 }
 
+.body3 { background-image: url('Pictures/fundo_confetis.png'); background-size: 100%;}
+
 .smallsize {width: 70%;}
 
 .regras {font-size: 24px;}
@@ -192,7 +194,7 @@ body, html {
     background-color: lightgray;}
 
 
-.carrinho {
+.login {
     z-index: 9999;
     padding: 18px;
     display: inline-block; width: 30px;
@@ -578,12 +580,41 @@ output {
     padding-top: 16px;
 }
 
+/* Contador */    
+
+#timer {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timewrapper {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 30vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#time {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #e62f1e;
+    font-size: 23vh;
+    padding-top: 3vh;
+  }
+
+
 @media print{
     .print {display: block; background-color: white; page-break-after: auto;}
     .noprint {display: none;}
     .creativecommons {display: block;}
     }
-    
+
  /* Tablet */
     
 @media only screen and (max-width: 1280px)
@@ -613,8 +644,9 @@ output {
 
 @media only screen and (max-width: 900px)
     {       
-    .newgame {font-size: 12px; padding: 8px 10px 8px 10px; margin-top: -6px;}
-    .carrinho {display: inline-block; width: 20px;}
+    .newgame {font-size: 12px; padding: 8px 10px 8px 10px;}
+    .login {display: inline-block; padding: 0 0 0 4px;}
+    .rightalign{margin-top: 17px;}
     .stepbystep {display: none;}
     .infostepbystep {display: none;}
     .actionbutton {height: 40px; width: 90px; font-size: 11px;}
@@ -634,7 +666,7 @@ output {
 
 @media only screen and (max-width: 500px)
     {       
-    .newgame {font-size: 10px; padding: 4px 8px 4px 8px; margin-top: -6px;}
+    .newgame {font-size: 10px; padding: 4px 8px 4px 8px;}
     #footer {font-size: 10px;}
     }
 
