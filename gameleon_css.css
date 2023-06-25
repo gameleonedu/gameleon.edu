@@ -676,6 +676,33 @@ output {
     .mycontainer {font-size: 16px;}
     .botão {font-size: 24px;}
     .rules {font-size: 14px;}
+
+    #timer {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #timewrapper {
+        width: 40vh;
+        height: 40vh;
+        border-radius: 20vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    
+    #time {
+        font-family: 'Josefin Sans', sans-serif;
+        color: #e62f1e;
+        font-size: 15vh;
+        padding-top: 3vh;
+      }
+
     }
 
 

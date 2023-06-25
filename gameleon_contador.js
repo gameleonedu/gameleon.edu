@@ -1,4 +1,5 @@
 var tempo = document.querySelector('h1');
+var wrapper = document.getElementById('timewrapper');
 let segundo = 60;
 
 function mostrador (second) {
@@ -20,8 +21,9 @@ function contador () {
 
 function fim () {
     tempo.innerHTML = 'O TEMPO ACABOU!'
-    tempo.style.fontSize = "10vh"
-    tempo.style.color ="black"
+    tempo.style.fontSize = "8vh"
+    tempo.style.color = "black"
+    wrapper.style.backgroundColor = "transparent"
 }
 
 function repor () {
