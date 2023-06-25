@@ -141,6 +141,7 @@ body, html {
 .leftalign {float: left;}
 
 .homealign {position: absolute; width: 83.3%; height: 25px; text-align: center;}
+.homelogo {width: 130px; margin: auto;}
 
 .rightalign {float: right; vertical-align: middle;}
 
@@ -298,6 +299,8 @@ footer {
     margin-left: -50%;
     }
 
+.baralhosprodutosmobile {display: none;}
+
 .inline {
     display: inline-block;
 }
@@ -348,19 +351,11 @@ footer {
     border-radius: 3px;
     }
 
-.actionbutton {background-color: black;
-    color: white;
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 0.5;
+.actionbutton {
+    width: min-content;
     border: none;
-    border-radius: 3px;
-    margin-top: 15%;
+    padding-left: 20px;
+    width: 200px;
     }
 
 button {text-decoration: none;}
@@ -618,7 +613,7 @@ output {
     .creativecommons {display: block;}
     }
 
- /* Tablet */
+ /* Small laptops & Big Tablets */
     
 @media only screen and (max-width: 1280px)
     {
@@ -643,7 +638,7 @@ output {
     }      
         
 
-/* Smaller Tablet */
+/* Tablet */
 
 @media only screen and (max-width: 900px)
     {       
@@ -671,11 +666,12 @@ output {
 @media only screen and (max-width: 500px)
     {
     h3 {font-size: 24px;}       
-    .newgame {font-size: 10px; padding: 4px;}
+    .newgame {font-size: 8px; padding: 4px;}
     #footer {font-size: 10px;}
     .mycontainer {font-size: 16px;}
     .botão {font-size: 24px;}
     .rules {font-size: 14px;}
+    .homelogo {width: 60px;}
 
     #timer {
         height: 90vh;
@@ -702,6 +698,9 @@ output {
         font-size: 15vh;
         padding-top: 3vh;
       }
+
+    .baralhosprodutosmobile {display: block;}
+    .inlinebaralho {display: none;}
 
     }
 

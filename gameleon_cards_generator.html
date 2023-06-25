@@ -39,7 +39,9 @@
                 </div>
     
                 <div class="homealign">
-                    <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="110vw"></a>
+                    <div class="homelogo">
+                    <a href="index.html" class="baritem"><img src="Pictures/gameleon_edu.svg" width="100%"></a>
+                    </div>
                 </div>
                 
                 <div class="rightalign">
@@ -102,7 +104,7 @@
 <!--Tabela perguntas-->
 
                 <div style="text-align: left; font-size: 20px; margin-bottom: 75px; line-height: 1.8;">Preencha a tabela com as suas perguntas e respostas de acordo com a categoria da carta.</br>Na categoria de escolha múltipla, escrever as 3 opçoes de resposta!</div>
-                <div style="text-align: right; margin-top: -150px; margin-bottom: -10px;">
+                <div style="text-align: right; margin-bottom: -10px;">
                     <img src="Pictures/gameleon_focus.png" width="20%" style="margin-right: 20px;">
                 </div>
                 
@@ -486,7 +488,7 @@
                 
                 <div style="float: right;">
                     <button onclick="myFunction()"
-                    class="actionbutton">
+                    class="newgame rules" style="border: none;">
                     GERAR CARTAS</button>
                 </div>
             
@@ -502,7 +504,7 @@
                 <textarea id="titulojogo" class="questiontitleheadline"></textarea>
             </h3>
 
-            <p style="text-align: center; margin-top: -60px; font-size: 20px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
+            <p class="rules" style="text-align: center; margin-top: -60px;"></br>Quer alterar uma questão? Todos os campos são editáveis.</p>
 
             <div class="cardsbutton">
                 <div class="buttoninfo">
@@ -1032,12 +1034,12 @@
         <div class="cardsbutton noprint">
             <div style="display: inline-block;">
                 <button onclick="myFunctionReturn()"
-                class="actionbutton">
+                class="newgame rules" style="border: none;">
                 REGRESSAR</button>
             </div>
             <div style="display: inline-block;">
                 <button onclick="printDiv('perguntas')"
-                class="actionbutton">
+                class="newgame rules" style="border: none;">
                 DOWNLOAD</button>
             </div>
         </div>        
