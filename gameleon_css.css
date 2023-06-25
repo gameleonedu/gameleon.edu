@@ -609,6 +609,9 @@ output {
   }
 
 
+ /* regras */
+.rules {font-size: 22px;}
+
 @media print{
     .print {display: block; background-color: white; page-break-after: auto;}
     .noprint {display: none;}
@@ -660,6 +663,7 @@ output {
     li {font-size: 24px;}
     .pontuacao1 {width: 100%; text-align: left;}
     .pontuacao2 {width: 100%;}
+    .rules {font-size: 18px;}
     }
 
 /* Mobile*/
@@ -671,6 +675,7 @@ output {
     #footer {font-size: 10px;}
     .mycontainer {font-size: 16px;}
     .botão {font-size: 24px;}
+    .rules {font-size: 14px;}
     }
 
 
