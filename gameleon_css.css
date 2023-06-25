@@ -92,7 +92,7 @@ body, html {
     color: white;
     border: 1px solid #ddd;
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 16px;
   }
 
 .tablestyle-wrapper {
@@ -515,6 +515,7 @@ output {
 /* Lading Page - Menu Inicial */
 
 .landingline {text-align: center; margin-top: -5px; margin-bottom: -6px; position: relative;}
+.marginlandingheadline {margin-top: -100px;}
 .landingrect1 {float:left; width: 70%; padding-top: 20px; padding-right: 10px; margin-left: 0%; margin-right: 0.8%; position: absolute;}
 .square {display:inline-block; width: 19%; text-align: center; vertical-align: middle;}
 
@@ -667,11 +668,12 @@ output {
     {
     h3 {font-size: 24px;}       
     .newgame {font-size: 8px; padding: 4px;}
-    #footer {font-size: 10px;}
+    .smallletter {font-size: 4px;}
     .mycontainer {font-size: 16px;}
     .botão {font-size: 24px;}
     .rules {font-size: 14px;}
     .homelogo {width: 60px;}
+    .marginlandingheadline {margin-top: 0;}
 
     #timer {
         height: 90vh;
