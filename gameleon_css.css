@@ -565,12 +565,26 @@ output {
     margin: 10px 10px 60px 10px;
 }
 
+.product2 {
+    display: inline-block;
+    width: 250px;
+    height: 0px;
+    text-align: center;
+    margin: 10px 10px 60px 10px;
+}
+
 .productimg {
     height: 250px;
     background-color: transparent;
     vertical-align: middle;
     position: relative;
-    background-image: url(Pictures/kraft2.jpg);
+}
+
+.productimg2 {
+    height: 0px;
+    background-color: transparent;
+    vertical-align: middle;
+    position: relative;
 }
 
 .producttext {
