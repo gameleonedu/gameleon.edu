@@ -62,6 +62,11 @@ body, html {
 
 .numero {font-size: 40px; font-weight: 600; margin-bottom: -50px; margin-top: 30px;}
 
+.productdetail0 {background-color: white; margin-top: 4vh; width: 100%; display: inline-flex;}
+.productdetail1 {width: 42%; padding: 4% 4% 0 4%;}
+.productdetail2 {width: 42%; padding: 4% 4% 4% 4%; text-align: left;}
+.productdetail3 {padding-bottom: 8%;}
+
 /* tabela */
 
 .numero {width: 80px;}
@@ -727,6 +732,11 @@ output {
 
     .initialpage1 {font-size: 8vw;}
     .initialpage2 {font-size: 6vw;}
+
+    .productdetail0 {background-color: white; margin-top: 10vh; width: 100%; display: inline-block;}
+    .productdetail1 {width: 88%; padding: 6% 6% 0 6%;}
+    .productdetail2 {width: 88%; padding: 0 6% 6% 6%; text-align: left;}
+    .productdetail3 {padding-bottom: 6%;}
 
     }
 
