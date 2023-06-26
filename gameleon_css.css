@@ -62,10 +62,10 @@ body, html {
 
 .numero {font-size: 40px; font-weight: 600; margin-bottom: -50px; margin-top: 30px;}
 
-.productdetail0 {background-color: white; margin-top: 4vh; width: 100%; display: inline-flex;}
+.productdetail0 {background-color: white; margin-top: 4vh; width: 100%; display: inline-flex; padding-bottom: 30px;}
 .productdetail1 {width: 42%; padding: 4% 4% 0 4%;}
 .productdetail2 {width: 42%; padding: 4% 4% 4% 4%; text-align: left;}
-.productdetail3 {padding-bottom: 8%;}
+.productdetail3 {padding-top: 35px; padding-bottom: 8%;}
 
 /* tabela */
 
